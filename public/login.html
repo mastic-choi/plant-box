@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000" />
-    <script src='../src/index.js'></script>
+    <script src='../src/login.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Plant-Box</title>
+    <title>Login</title>
     <link rel="shortcut icon" type="image/x-icon" href="../src/logo128.png" />
-    <link rel='stylesheet' type="text/css" href="../src/index.css" />
+    <link rel='stylesheet' type="text/css" href="../src/login.css" />
     <meta property="og:url" content="https://www.nalssam.com" />
     <meta property="og:type" content="Shop" />
     <meta property="og:title" content="Plant-Box" />
-    <meta property="og:description" content="클릭하는 순간, 미래" />
-    <meta property="og:image" content="../src/banner-1" />
+    <meta property="og:description" content="Plant-Box에 로그인 하세요." />
+    <meta property="og:image" src="../src/logo1000  " />
 </head>
 
 <body>
@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="./shop.html">Shop</a>
+                        <a class="nav-link active" href="#">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./story.html">Story</a>
+                        <a class="nav-link active" href="#">Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./invest.html">Invest</a>
+                        <a class="nav-link active" href="#">Invest</a>
                     </li>
                 </ul>
                 <span class="nav-item">
@@ -41,31 +41,26 @@
             </div>
         </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./banner-1.jpg" class="d-block w-100" alt="Plant Box를 소개합니다.">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner-2.jpg" class="d-block w-100" alt="대전대신고등학교 자율활동 SDGs">
-            </div>
-            <div class="carousel-item">
-                <img src="./banner-3.jpg" class="d-block w-100" alt="클러우드 펀딩에 도전해보세요.">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+    <h2>Login Page</h2><br>
+    <div class="login">
+        <form id="login" method="get" action="login.php">
+            <label><b>User Name     
+        </b>    
+        </label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username">
+            <br><br>
+            <label><b>Password     
+        </b>    
+        </label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">
+            <br><br>
+            <input type="button" name="log" id="log" value="Log In Here">
+            <br><br>
+            <input type="checkbox" id="check">
+            <span>Remember me</span>
+            <br><br> Forgot <a href="./index.html">Password</a>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
